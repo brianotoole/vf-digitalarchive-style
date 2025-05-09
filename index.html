@@ -1,0 +1,117 @@
+<!doctype html>
+<html
+	lang="en"
+	style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	"
+>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<style>
+			:root {
+				--bg: white;
+				--col:   #27272a;
+				--bg-dark: #0f0f11;
+				--col-dark: #f4f4f5;
+			}
+
+
+			body {
+				background: var(--bg);
+				color: var(--col);
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: var(--bg-dark);
+					color: var(--col-dark);
+				}
+			}
+		</style>
+
+		<meta property="og:url" content="https://gradio.app/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="" />
+		<meta property="og:title" content="Digital Archive Q&amp;A (디지털 아카이브 질의응답)" />
+		<meta
+			property="og:description"
+			content=""
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@teamGradio" />
+		<meta name="twitter:title" content="Digital Archive Q&amp;A (디지털 아카이브 질의응답)" />
+		<meta
+			name="twitter:description"
+			content=""
+		/>
+		<meta name="twitter:image" content="" />
+
+		<script data-gradio-mode>
+			window.__gradio_mode__ = "app";
+			window.iFrameResizer = {
+				heightCalculationMethod: "taggedElement"
+			};
+			window.parent?.postMessage(
+				{ type: "SET_SCROLLING", enabled: false },
+				"*"
+			);
+		</script>
+
+		<script>window.gradio_config = {"version":"5.23.1","api_prefix":"/gradio_api","mode":"interface","app_id":6563622769447567298,"dev_mode":false,"analytics_enabled":true,"components":[{"id":4,"type":"markdown","props":{"value":"\u003ch1 style=\u0027text-align: center; margin-bottom: 1rem\u0027\u003eDigital Archive Q\u0026A (디지털 아카이브 질의응답)\u003c/h1\u003e","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"2e917dbeccd15ebb1af736605d37dd677cc1b0ef9aeb2b6ee7e5d4452e137262","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":5,"type":"markdown","props":{"value":"Ask questions about the digital archive. The system retrieves relevant documents and generates an answer.\n\n디지털 아카이브에 대한 질문을 하세요. 시스템이 관련 문서를 검색하고 답변을 생성합니다.","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"sanitize_html":true,"line_breaks":false,"header_links":false,"show_copy_button":false,"container":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"2e917dbeccd15ebb1af736605d37dd677cc1b0ef9aeb2b6ee7e5d4452e137262","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":6,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"name":"row"},"skip_api":true,"component_class_id":"e74717af28f4d5e8a3074732c6f6f37b0b44aee2213ec3796d91fc9e077e17aa","key":null},{"id":7,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"name":"column"},"skip_api":true,"component_class_id":"d4278d0f675171f021da4bf6a6f6d61ddf78a6264c27587ba4aff78368667bc8","key":null},{"id":8,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"name":"column"},"skip_api":true,"component_class_id":"d4278d0f675171f021da4bf6a6f6d61ddf78a6264c27587ba4aff78368667bc8","key":null},{"id":0,"type":"textbox","props":{"type":"text","lines":2,"placeholder":"Enter your question here... (질문을 입력하세요...)","label":"Query (질문)","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"de33ab5043235809eacf03d138930e3dbcac8e9c8b829e97d92dfb221ea3cebd","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":9,"type":"form","props":{"scale":0,"min_width":0,"name":"form"},"skip_api":true,"component_class_id":"8bd54534e2d31ab057f7779a1fe632a8a9472c6f69e79ad26fef4cd83bd23446","key":null},{"id":10,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"name":"row"},"skip_api":true,"component_class_id":"e74717af28f4d5e8a3074732c6f6f37b0b44aee2213ec3796d91fc9e077e17aa","key":null},{"id":11,"type":"button","props":{"value":"Clear","variant":"secondary","size":"lg","visible":true,"interactive":true,"elem_classes":[],"show_api":false,"name":"button","_selectable":false},"skip_api":true,"component_class_id":"d241b22cb0f0577d04422a9cead6bdd9929989bcac304b0fa703b0fad6f6be65","key":null},{"id":12,"type":"button","props":{"value":"Submit","variant":"primary","size":"lg","visible":true,"interactive":true,"elem_classes":[],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"93f0296f7a5a640bba5f593014ba48bb7d44e172f9bc5483b5616a15e42c1b13","key":null},{"id":13,"type":"column","props":{"scale":1,"min_width":320,"variant":"default","visible":true,"show_progress":false,"name":"column"},"skip_api":true,"component_class_id":"d4278d0f675171f021da4bf6a6f6d61ddf78a6264c27587ba4aff78368667bc8","key":null},{"id":1,"type":"textbox","props":{"type":"text","lines":1,"label":"Answer (답변)","show_label":true,"container":true,"min_width":160,"interactive":false,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"rtl":false,"show_copy_button":false,"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"de33ab5043235809eacf03d138930e3dbcac8e9c8b829e97d92dfb221ea3cebd","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":2,"type":"html","props":{"label":"Source Documents (출처 문서)","show_label":false,"visible":true,"elem_classes":[],"container":false,"padding":true,"name":"html","_selectable":false},"skip_api":false,"component_class_id":"07bfca88fbc479bf5c65a2fe6666f564a0349f1266e5e13249fe147e92575430","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"\u003cp\u003eHello\u003c/p\u003e"},{"id":14,"type":"row","props":{"variant":"default","visible":true,"equal_height":false,"show_progress":false,"name":"row"},"skip_api":true,"component_class_id":"e74717af28f4d5e8a3074732c6f6f37b0b44aee2213ec3796d91fc9e077e17aa","key":null},{"id":15,"type":"form","props":{"scale":0,"min_width":0,"name":"form"},"skip_api":true,"component_class_id":"8bd54534e2d31ab057f7779a1fe632a8a9472c6f69e79ad26fef4cd83bd23446","key":null},{"id":16,"type":"dataset","props":{"show_label":true,"component_props":[{"type":"text","lines":2,"max_lines":null,"placeholder":"Enter your question here... (질문을 입력하세요...)","label":"Query (질문)","info":null,"show_label":true,"container":true,"scale":null,"min_width":160,"interactive":null,"visible":true,"elem_id":null,"autofocus":false,"autoscroll":true,"elem_classes":[],"key":null,"text_align":null,"rtl":false,"show_copy_button":false,"max_length":null,"submit_btn":false,"stop_btn":false}],"samples":[["When was General Van Fleet meeting Defense minister of the Republic of Korea"],["What was General Van Fleet\u0027s role in the Battle of the Bulge?"],["Tell me about the D-Day landings on Utah Beach."],["Provide information on the Greek Communist insurgency covered in the archives."],["제임스 밴 플리트 장군이 대한민국 국방부 장관을 만난 시기는 언제인가요?"]],"headers":["Query (질문)"],"type":"tuple","samples_per_page":10,"visible":true,"elem_classes":[],"container":true,"min_width":160,"name":"dataset","_selectable":false,"components":["textbox"],"component_ids":[0]},"skip_api":false,"component_class_id":"71c2dd0b3df3e21fab16d04c98cf616a2c92e6179c45cd81b4887c7bd6eed11f","key":null,"api_info":{"type":"integer","description":"index of selected example"},"api_info_as_input":{"type":"integer","description":"index of selected example"},"api_info_as_output":{"type":"integer","description":"index of selected example"},"example_inputs":0}],"css":"","connect_heartbeat":false,"js":"","head":"","title":"Digital Archive Q\u0026A (디지털 아카이브 질의응답)","space_id":null,"enable_queue":true,"show_error":false,"show_api":true,"is_colab":false,"max_file_size":null,"stylesheets":["https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600\u0026display=swap"],"theme":"default","protocol":"sse_v3","body_css":{"body_background_fill":"white","body_text_color":"#27272a","body_background_fill_dark":"#0f0f11","body_text_color_dark":"#f4f4f5"},"fill_height":false,"fill_width":false,"theme_hash":"63194d3741d384f9f85db890247b6c0ef9e7abac0f297f40a15c59fe4baba916","pwa":false,"pages":[["","Home"]],"page":{"":{"layout":{"id":3,"children":[{"id":4},{"id":5},{"id":6,"children":[{"id":7,"children":[{"id":8,"children":[{"id":9,"children":[{"id":0}]}]},{"id":10,"children":[{"id":11},{"id":12}]}]},{"id":13,"children":[{"id":15,"children":[{"id":1}]},{"id":2},{"id":14,"children":[]}]}]},{"id":16}]},"components":[4,5,6,7,8,0,9,10,11,12,13,1,2,14,15,16],"dependencies":[0,1,2,3]}},"dependencies":[{"id":0,"targets":[[12,"click"],[0,"submit"]],"inputs":[0],"outputs":[1,2],"backend_fn":true,"js":null,"queue":true,"api_name":"predict","scroll_to_output":true,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":true,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":[],"js_implementation":null},{"id":1,"targets":[[11,"click"]],"inputs":[],"outputs":[0,1,2],"backend_fn":false,"js":"() =\u003e [null, null, null]","queue":false,"api_name":"js_fn","scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null},{"id":2,"targets":[[11,"click"]],"inputs":[],"outputs":[8],"backend_fn":false,"js":"() =\u003e [{\"variant\": null, \"visible\": true, \"__type__\": \"update\"}]\n            ","queue":false,"api_name":"js_fn_1","scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null},{"id":3,"targets":[[16,"click"]],"inputs":[16],"outputs":[0],"backend_fn":true,"js":null,"queue":false,"api_name":"load_example","scroll_to_output":false,"show_progress":"hidden","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_mode":"once","show_api":false,"rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"like_user_message":false,"event_specific_args":null,"js_implementation":null}],"layout":{"id":3,"children":[{"id":4},{"id":5},{"id":6,"children":[{"id":7,"children":[{"id":8,"children":[{"id":9,"children":[{"id":0}]}]},{"id":10,"children":[{"id":11},{"id":12}]}]},{"id":13,"children":[{"id":15,"children":[{"id":1}]},{"id":2},{"id":14,"children":[]}]}]},{"id":16}]},"root":"https://van-fleet-gradio-djc8fjdycge2cmej.westus2-01.azurewebsites.net","username":null,"deep_link_state":"none","current_page":""};</script><script>window.gradio_api_info = {"named_endpoints":{"/predict":{"parameters":[{"label":"Query (질문)","parameter_name":"query","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"}],"returns":[{"label":"Answer (답변)","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"},{"label":"Source Documents (출처 문서)","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Html"}],"show_api":true}},"unnamed_endpoints":{}};</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js"
+			async
+		></script>
+
+		<link rel="manifest" href="/manifest.json" />
+		<script type="module" crossorigin src="https://van-fleet-gradio-djc8fjdycge2cmej.westus2-01.azurewebsites.net/assets/index-D_OcG73B.js"></script>
+		<link rel="stylesheet" crossorigin href="./assets/index-DZxCC8UA.css">
+		<link rel="stylesheet" href="assets/site.css">
+	</head>
+
+	<body
+		style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		"
+	>
+		<gradio-app
+			control_page_title="true"
+			embed="false"
+			eager="true"
+			style="display: flex; flex-direction: column; flex-grow: 1"
+		>
+		</gradio-app>
+		<script>
+			const ce = document.getElementsByTagName("gradio-app");
+
+			if (ce[0]) {
+				ce[0].addEventListener("domchange", () => {
+					document.body.style.padding = "0";
+				});
+				document.body.style.padding = "0";
+			}
+		</script>
+	</body>
+</html>
