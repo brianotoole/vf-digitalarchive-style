@@ -398,6 +398,7 @@ div.svelte-633qhp {
   border: none !important;
   box-shadow: none !important;
   font-size: 16px !important;
+  font-weight: 400 !important;
   color: var(--color-text) !important;
   padding: 10px 5px !important;
   background: #e6eaed !important;
@@ -406,6 +407,11 @@ div.svelte-633qhp {
 #component-13:has(.prose:not(:empty)) {
   display: block !important;
   margin-top: 24px !important;
+}
+
+.padding.svelte-phx28p {
+  padding-top: 0 !important;
+  padding-bottom: 10px !important;
 }
 
 .gradio-container-5-23-1 .prose li {
@@ -590,4 +596,11 @@ span.svelte-1gfkn6j {
 .divider.show-api-divider.svelte-1byz9vf,
 .divider.svelte-1byz9vf {
   display: none !important;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    text-align: left !important;
+    width: 100% !important;
+  }
 }
